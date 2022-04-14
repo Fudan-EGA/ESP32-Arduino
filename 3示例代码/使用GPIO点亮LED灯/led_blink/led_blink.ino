@@ -5,16 +5,15 @@
  * 
  */
 
+#define LED 2
+
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(2, OUTPUT); //设置管脚2为输出模式
+  pinMode(LED, OUTPUT);
 }
 
-
 void loop() {
-  // put your main code here, to run repeatedly:
-  digitalWrite(2, HIGH); //设置管脚2为高电平
-  delay(500);  //延时500ms
-  digitalWrite(2, LOW); //设置管教2 为低电平
+  digitalWrite(LED, HIGH);
+  delay(500);
+  digitalWrite(LED, LOW);
   delay(500);
 }
